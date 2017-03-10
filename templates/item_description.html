@@ -6,22 +6,18 @@
     </div>
     <div class="row banner menu">
         <div class="col-md-11 col-md-offset-1 padding-none">
-            <h1>{{ item.name }}
+            <h1>{{item.name}}
             </h1>
         </div>
     </div>
 
-    {% if items !=[] %}
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
-                {% for i in items %}
-                    <div class="item-description">
-                        <p>{{i.description}}</p>
-                    </div>
-                {% endfor %}
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+            <div class="item-description">
+                <p>{{item.description}}</p>
             </div>
-            <div class="col-md-1"></div>
         </div>
-    {% endif %}
+        <div class="col-md-1"></div>
+    </div>
 {% endblock %}
